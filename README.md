@@ -1,5 +1,9 @@
 # Gmail Markdown Formatter
 
+[![Vercel Deployment](https://img.shields.io/github/deployments/gverni/gmail-markdown-formatter/production?label=vercel&logo=vercel&logoColor=white)](https://gmail-markdown-formatter.vercel.app/)
+
+**Live demo:** [gmail-markdown-formatter.vercel.app](https://gmail-markdown-formatter.vercel.app/)
+
 **Gmail does not support Markdown.** Compose is rich text, so if you paste raw Markdown you lose headings, lists, links, and emphasis.
 
 That shows up a lot when your draft comes from an **agent or LLM** (or any tool that outputs Markdown). You still want to send from Gmail without reformatting by hand. This app converts Markdown to HTML in your browser, lets you preview it, and copies **rich HTML** so you can paste into Gmail compose with formatting intact.

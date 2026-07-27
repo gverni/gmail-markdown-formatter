@@ -128,7 +128,7 @@ export default function EmailFormatter() {
         </section>
 
         <section className="flex min-h-[320px] flex-col gap-3">
-          <div className="flex items-center justify-between">
+          <div className="mt-6 flex items-center justify-between lg:mt-0">
             <h2
               id="preview-label"
               className="m-0 text-sm font-medium text-foreground"

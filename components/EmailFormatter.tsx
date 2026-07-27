@@ -10,7 +10,7 @@ import {
   MARKDOWN_EMPTY_HINT,
   MARKDOWN_SAMPLE,
 } from "@/lib/markdownPlaceholder";
-import { GITHUB_REPO_URL } from "@/lib/siteConfig";
+import { RUN_LOCALLY_URL } from "@/lib/siteConfig";
 
 type CopyStatus = "idle" | "success" | "error";
 
@@ -75,7 +75,7 @@ export default function EmailFormatter() {
         <p className="mt-4 max-w-3xl text-sm text-muted">
           Don&apos;t believe your email never leaves your browser?{" "}
           <a
-            href={GITHUB_REPO_URL}
+            href={RUN_LOCALLY_URL}
             className="font-medium text-blurple underline underline-offset-2 hover:text-blurple-hover"
             target="_blank"
             rel="noopener noreferrer"

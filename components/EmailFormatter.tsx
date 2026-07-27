@@ -101,7 +101,13 @@ export default function EmailFormatter() {
 
       <div className="grid flex-1 gap-3 lg:grid-cols-2 lg:gap-x-8">
         <section className="flex min-h-[320px] flex-col gap-3">
-          <div className="flex min-h-10 items-center justify-start">
+          <div className="flex items-center justify-between">
+            <label
+              htmlFor="markdown-input"
+              className="text-sm font-medium text-foreground"
+            >
+              Markdown
+            </label>
             <button
               type="button"
               onClick={handleClear}
@@ -111,12 +117,6 @@ export default function EmailFormatter() {
               Clear
             </button>
           </div>
-          <label
-            htmlFor="markdown-input"
-            className="text-sm font-medium text-foreground"
-          >
-            Markdown
-          </label>
           <textarea
             id="markdown-input"
             value={markdown}
@@ -128,7 +128,13 @@ export default function EmailFormatter() {
         </section>
 
         <section className="flex min-h-[320px] flex-col gap-3">
-          <div className="flex min-h-10 items-center justify-end">
+          <div className="mt-6 flex items-center justify-between lg:mt-0">
+            <h2
+              id="preview-label"
+              className="m-0 text-sm font-medium text-foreground"
+            >
+              Preview
+            </h2>
             <button
               type="button"
               onClick={handleCopyHtml}
@@ -138,12 +144,6 @@ export default function EmailFormatter() {
               Copy HTML for Gmail
             </button>
           </div>
-          <h2
-            id="preview-label"
-            className="m-0 text-sm font-medium text-foreground"
-          >
-            Preview
-          </h2>
           <div
             className="min-h-[400px] flex-1 overflow-auto rounded-xl border border-border bg-email-preview p-6 text-[15px] leading-relaxed text-neutral-900 shadow-inner"
             id={PREVIEW_CONTENT_ID}

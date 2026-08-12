@@ -75,6 +75,21 @@ export function applyCustomStyles(html: string): string {
     '<li style="margin: 0.25em 0; display: list-item;">',
   );
 
+  styledHtml = styledHtml.replace(
+    /<table>/g,
+    '<table style="border-collapse: collapse; width: 100%; font-size: 13px;">',
+  );
+
+  styledHtml = styledHtml.replace(
+    /<th>/g,
+    '<th style="border: 1px solid #d1d5da; padding: 6px 12px; background-color: #f6f8fa; font-weight: 600; text-align: left;">',
+  );
+
+  styledHtml = styledHtml.replace(
+    /<td>/g,
+    '<td style="border: 1px solid #d1d5da; padding: 6px 12px;">',
+  );
+
   return styledHtml;
 }
 

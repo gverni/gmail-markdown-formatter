@@ -35,5 +35,3 @@ function hello() {
 \\[0\\]: https://example.com
 
 `;
-
-export const MARKDOWN_EMPTY_HINT = "Write markdown here...";

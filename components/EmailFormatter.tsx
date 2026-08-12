@@ -6,10 +6,7 @@ import {
   copyHtmlFromPreviewElement,
 } from "@/lib/copyToClipboard";
 import { renderMarkdownToEmailHtml } from "@/lib/markdownToEmailHtml";
-import {
-  MARKDOWN_EMPTY_HINT,
-  MARKDOWN_SAMPLE,
-} from "@/lib/markdownPlaceholder";
+import { MARKDOWN_SAMPLE } from "@/lib/markdownPlaceholder";
 import { RUN_LOCALLY_URL } from "@/lib/siteConfig";
 
 type CopyStatus = "idle" | "success" | "error";
@@ -121,7 +118,6 @@ export default function EmailFormatter() {
             id="markdown-input"
             value={markdown}
             onChange={(e) => setMarkdown(e.target.value)}
-            placeholder={MARKDOWN_EMPTY_HINT}
             className="min-h-[400px] flex-1 resize-y rounded-xl border border-border bg-surface px-4 py-3 font-mono text-sm text-foreground shadow-sm outline-none ring-blurple/0 transition-shadow placeholder:text-muted focus:border-blurple focus:ring-2 focus:ring-blurple/30"
             spellCheck={false}
           />
